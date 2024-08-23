@@ -1,6 +1,18 @@
 [profile.default]
-src = "src"
+src = "contracts"
 out = "out"
 libs = ["lib"]
+solc_version = "0.8.19"
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[rpc_endpoints]
+zkSyncSepoliaTestnet = "https://sepolia.era.zksync.dev"
+inMemoryNode = "http://127.0.0.1:8011"
+
+[profile.default.zksync]
+zksolc = "1.5.1"
+
+[etherscan]
+zksyncTestnet = { key = "YOUR-ETHERSCAN-API-KEY", url = "https://api-sepolia-era.zksync.network/api", chain = 300 }
+zksyncTestnetZK = { key = "no-key-needed-for-zksync-explorer", url = "https://explorer.sepolia.era.zksync.dev/contract_verification", chain = 30000 }

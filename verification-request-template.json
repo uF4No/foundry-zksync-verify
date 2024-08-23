@@ -1,0 +1,12 @@
+{
+  "contractAddress": "0x7D2A8F2fc433E41A4555f6B28B1f176a96f5769A",
+  "sourceCode": {
+    // PASTE COMPILER INPUT FROM LOG HERE
+  },
+  "codeFormat": "solidity-standard-json-input",
+  "contractName": "contracts/Counter.sol:Counter",
+  "compilerSolcVersion": "zkVM-0.8.20-1.0.1",
+  "compilerZksolcVersion": "v1.5.1",
+  "constructorArguments": "0x",
+  "optimizationUsed": true
+}
