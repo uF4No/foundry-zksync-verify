@@ -1,0 +1,49 @@
+{
+  "contractAddress": "0xD09e794E6E8DCb25Fd0cf96D0B6925202DdF0ee0",
+  "sourceCode": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/Counter.sol": {
+        "content": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.13;\n\ncontract Counter {\n    uint256 public number;\n\n    function setNumber(uint256 newNumber) public {\n        number = newNumber;\n    }\n\n    function increment() public {\n        number++;\n    }\n}\n"
+      }
+    },
+    "settings": {
+      "viaIR": false,
+      "remappings": [
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "evmVersion": "cancun",
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi"
+          ]
+        }
+      },
+      "optimizer": {
+        "enabled": true,
+        "mode": "3",
+        "fallback_to_optimizing_for_size": false,
+        "disable_system_request_memoization": true
+      },
+      "metadata": {},
+      "libraries": {},
+      "detectMissingLibraries": false,
+      "enableEraVMExtensions": false,
+      "forceEVMLA": false,
+      "allowPaths": [
+        "/Users/antonio/MatterLabs/foundry-zksync-verify",
+        "/Users/antonio/MatterLabs/foundry-zksync-verify/lib"
+      ],
+      "includePaths": [
+        "/Users/antonio/MatterLabs/foundry-zksync-verify"
+      ]
+    }
+  },
+  "codeFormat": "solidity-standard-json-input",
+  "contractName": "contracts/Counter.sol:Counter",
+  "compilerSolcVersion": "0.8.24",
+  "compilerZksolcVersion": "v1.5.1",
+  "constructorArguments": "0x",
+  "optimizationUsed": true
+}

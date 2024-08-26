@@ -1,5 +1,5 @@
 {
-  "contractAddress": "0xD09e794E6E8DCb25Fd0cf96D0B6925202DdF0ee0",
+  "contractAddress": "0x5aD9100F05E250F5C457A32503a65380E05541E8",
   "sourceCode": {
     "language": "Solidity",
     "sources": {
@@ -12,7 +12,7 @@
       "remappings": [
         "forge-std/=lib/forge-std/src/"
       ],
-      "evmVersion": "cancun",
+      "evmVersion": "paris",
       "outputSelection": {
         "*": {
           "*": [
@@ -42,7 +42,7 @@
   },
   "codeFormat": "solidity-standard-json-input",
   "contractName": "contracts/Counter.sol:Counter",
-  "compilerSolcVersion": "zkVM-0.8.20-1.0.1",
+  "compilerSolcVersion": "zkVM-0.8.19-1.0.1",
   "compilerZksolcVersion": "v1.5.1",
   "constructorArguments": "0x",
   "optimizationUsed": true

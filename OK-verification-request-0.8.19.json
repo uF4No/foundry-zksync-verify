@@ -42,7 +42,7 @@
   },
   "codeFormat": "solidity-standard-json-input",
   "contractName": "contracts/Counter.sol:Counter",
-  "compilerSolcVersion": "zkVM-0.8.20-1.0.1",
+  "compilerSolcVersion": "0.8.19",
   "compilerZksolcVersion": "v1.5.1",
   "constructorArguments": "0x",
   "optimizationUsed": true
