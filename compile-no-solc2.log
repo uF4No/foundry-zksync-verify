@@ -1,0 +1,49 @@
+2024-08-26T14:07:46.612127Z TRACE foundry_config::providers::remappings: get all remappings from "/Users/antonio/MatterLabs/foundry-zksync-verify"
+2024-08-26T14:07:46.612273Z TRACE foundry_config::providers::remappings: find all remappings of nested foundry.toml lib: "/Users/antonio/MatterLabs/foundry-zksync-verify/lib/forge-std"
+2024-08-26T14:07:46.612868Z TRACE foundry_config::providers::remappings: get all remappings from "/Users/antonio/MatterLabs/foundry-zksync-verify/lib/forge-std"
+2024-08-26T14:07:46.612875Z TRACE foundry_config::providers::remappings: find all remappings lib="/Users/antonio/MatterLabs/foundry-zksync-verify/lib/forge-std/lib"
+2024-08-26T14:07:46.613062Z TRACE foundry_config: load config with provider: Metadata { name: "Default", source: None, provide_location: None, interpolater:  }
+2024-08-26T14:07:46.613526Z TRACE foundry_config::providers::remappings: find all remappings lib="/Users/antonio/MatterLabs/foundry-zksync-verify/lib"
+2024-08-26T14:07:46.615136Z TRACE foundry_cli::utils: executing command=cd "/Users/antonio/MatterLabs/foundry-zksync-verify" && "git" "submodule" "status" "/Users/antonio/MatterLabs/foundry-zksync-verify/lib"
+2024-08-26T14:07:47.031248Z TRACE foundry_cli::utils: code=Some(0) output=Output { status: ExitStatus(unix_wait_status(0)), stdout: " 1714bee72e286e73f76e320d110e0eaf5c4e649d lib/forge-std (v1.9.2)\n", stderr: "" }
+2024-08-26T14:07:47.032544Z DEBUG version: foundry_compilers::compilers::solc::compiler: getting Solc version cmd="/Users/antonio/.svm/0.8.19/solc-0.8.19" "--version"
+2024-08-26T14:07:47.309450Z TRACE version: foundry_compilers::compilers::solc::compiler: output=Output { status: ExitStatus(unix_wait_status(0)), stdout: "solc, the solidity compiler commandline interface\nVersion: 0.8.19+commit.7dd6d404.Darwin.appleclang\n", stderr: "" }
+2024-08-26T14:07:47.309513Z DEBUG version: foundry_compilers::compilers::solc::compiler: version=0.8.19+commit.7dd6d404.Darwin.appleclang
+2024-08-26T14:07:47.309699Z DEBUG version: foundry_compilers::compilers::zksolc: getting ZkSolc version cmd="/Users/antonio/.zksync/zksolc-macosx-arm64-v1.5.1" "--version"
+2024-08-26T14:07:47.553440Z TRACE version: foundry_compilers::compilers::zksolc: output=Output { status: ExitStatus(unix_wait_status(0)), stdout: "Solidity compiler for ZKsync v1.5.1 (LLVM build 280f38e3b73cbed0b037aa7e6c073d8e25dbdaa1)\n", stderr: "" }
+2024-08-26T14:07:47.553479Z DEBUG version: foundry_compilers::compilers::zksolc: version=1.5.1
+
+2024-08-26T14:07:47.553772Z DEBUG zksync_compile_with: foundry_common::compile: compiling project
+2024-08-26T14:07:47.553900Z TRACE zksync_compile_with:read_source: foundry_compilers_artifacts_solc::sources: file=/Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol
+2024-08-26T14:07:47.556013Z TRACE zksync_compile_with: foundry_compilers::resolver: resolving input node versions
+2024-08-26T14:07:47.556058Z TRACE zksync_compile_with: foundry_compilers::resolver: found exact solc version for all sources  "0.8.19"
+2024-08-26T14:07:47.556060Z TRACE zksync_compile_with: foundry_compilers::resolver: resolved 1 versions [Installed(Version { major: 0, minor: 8, patch: 19 })]
+2024-08-26T14:07:47.556112Z TRACE zksync_compile_with: foundry_compilers::zksync::compile::project: preprocessing
+2024-08-26T14:07:47.556173Z TRACE zksync_compile_with:sol-files-cache::read: foundry_compilers::cache: reading solfiles cache at /Users/antonio/MatterLabs/foundry-zksync-verify/cache/zksync-solidity-files-cache.json
+2024-08-26T14:07:47.556703Z TRACE zksync_compile_with:sol-files-cache::read: foundry_compilers::cache: read cache "" with 1 entries
+2024-08-26T14:07:47.556754Z TRACE zksync_compile_with: foundry_compilers::cache: remove non existing files from cache
+2024-08-26T14:07:47.556761Z TRACE zksync_compile_with: foundry_compilers::cache: reading build infos from cache...
+2024-08-26T14:07:47.556824Z TRACE zksync_compile_with:read_source: foundry_compilers_artifacts_solc::sources: file=/Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol
+2024-08-26T14:07:47.556922Z TRACE zksync_compile_with: foundry_compilers::cache: solc config not compatible
+2024-08-26T14:07:47.556927Z DEBUG zksync_compile_with: foundry_compilers::cache: removing dirty file from cache: /Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol
+2024-08-26T14:07:47.556942Z TRACE zksync_compile_with: foundry_compilers::zksync::compile::project: Filtering 1 sources for 0.8.19
+2024-08-26T14:07:47.556957Z TRACE zksync_compile_with:is_missing_artifacts{file="/Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol" version=Version { major: 0, minor: 8, patch: 19 }}: foundry_compilers::cache: missing cache entry
+2024-08-26T14:07:47.556973Z TRACE zksync_compile_with: foundry_compilers::zksync::compile::project: Detected 1 sources to compile ["/Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol"]
+2024-08-26T14:07:47.556975Z TRACE zksync_compile_with: foundry_compilers::zksync::compile::project: compiling
+2024-08-26T14:07:47.556989Z TRACE zksync_compile_with: foundry_compilers::zksync::compile::project: calling 0.8.19 with 1 sources ["/Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol"]
+Compiling 1 files with zksolc and solc 0.8.19
+2024-08-26T14:07:47.557147Z TRACE zksync_compile_with:compile: foundry_compilers::compilers::zksolc: input={"language":"Solidity","sources":{"contracts/Counter.sol":{"content":"// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.13;\n\ncontract Counter {\n    uint256 public number;\n\n    function setNumber(uint256 newNumber) public {\n        number = newNumber;\n    }\n\n    function increment() public {\n        number++;\n    }\n}\n"}},"settings":{"viaIR":false,"remappings":["forge-std/=lib/forge-std/src/"],"evmVersion":"paris","outputSelection":{"*":{"*":["abi"]}},"optimizer":{"enabled":true,"mode":"3","fallback_to_optimizing_for_size":false,"disable_system_request_memoization":true},"metadata":{},"libraries":{},"detectMissingLibraries":false,"enableEraVMExtensions":false,"forceEVMLA":false,"allowPaths":["/Users/antonio/MatterLabs/foundry-zksync-verify","/Users/antonio/MatterLabs/foundry-zksync-verify/lib"],"includePaths":["/Users/antonio/MatterLabs/foundry-zksync-verify"]}}
+2024-08-26T14:07:47.557154Z DEBUG zksync_compile_with:compile: foundry_compilers::compilers::zksolc: compiling cmd="/Users/antonio/.zksync/zksolc-macosx-arm64-v1.5.1" "--solc" "/Users/antonio/.svm/0.8.19/solc-0.8.19" "--standard-json"
+2024-08-26T14:07:47.557992Z DEBUG zksync_compile_with:compile: foundry_compilers::compilers::zksolc: spawned
+2024-08-26T14:07:47.558070Z DEBUG zksync_compile_with:compile: foundry_compilers::compilers::zksolc: wrote JSON input to stdin
+2024-08-26T14:07:48.119987Z DEBUG zksync_compile_with:compile: foundry_compilers::compilers::zksolc: finished output.status=exit status: 0 output.stderr=""
+zksolc and solc 0.8.19 finished in 563.22ms
+2024-08-26T14:07:48.120302Z TRACE zksync_compile_with:write-artifacts: foundry_compilers::zksync::compile::project: handling artifact output for 1 contracts and 1 sources
+2024-08-26T14:07:48.120322Z TRACE zksync_compile_with:write-artifacts: foundry_compilers::zksync::artifact_output::zk: use artifact file "/Users/antonio/MatterLabs/foundry-zksync-verify/zkout/Counter.sol/Counter.json" for contract file /Users/antonio/MatterLabs/foundry-zksync-verify/contracts/Counter.sol 0.8.19
+2024-08-26T14:07:48.120516Z TRACE zksync_compile_with:write-artifacts: foundry_compilers::artifact_output: writing artifact file "/Users/antonio/MatterLabs/foundry-zksync-verify/zkout/Counter.sol/Counter.json" 0.8.19
+2024-08-26T14:07:48.120775Z TRACE zksync_compile_with:write-artifacts: foundry_compilers::zksync::compile::output: writing build info file c007d63572f8d1f00394ba51d884cb11
+2024-08-26T14:07:48.120895Z TRACE zksync_compile_with: foundry_compilers::zksync::compile::project: prepare writing cache file has_error=false project.no_artifacts=false skip_write_to_disk=false cache_path="/Users/antonio/MatterLabs/foundry-zksync-verify/cache/zksync-solidity-files-cache.json"
+2024-08-26T14:07:48.120905Z TRACE zksync_compile_with: foundry_compilers::cache: writing cache with 1 entries to json file: "/Users/antonio/MatterLabs/foundry-zksync-verify/cache/zksync-solidity-files-cache.json"
+2024-08-26T14:07:48.121656Z TRACE zksync_compile_with: foundry_compilers::cache: cache file located: "/Users/antonio/MatterLabs/foundry-zksync-verify/cache/zksync-solidity-files-cache.json"
+2024-08-26T14:07:48.121688Z DEBUG zksync_compile_with: foundry_common::compile: finished compiling in 0.568s
+Compiler run successful!

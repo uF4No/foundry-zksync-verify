@@ -14,7 +14,7 @@ This project contains information to debug verification errors for contracts com
 
 Foundry-zksync currently does not use [the solc fork created by MatterLabs](https://github.com/matter-labs/era-solidity), also known as **zkVM solc compiler**. This fork was created to  addresses limitations when using older versions of Solidity ([read more here](https://docs.zksync.io/build/tooling/hardhat/hardhat-zksync-solc#zksync-era-solidity-compiler)).
 
-**If a specific solc version is included in `foundry.toml`, foundry-zksync will use vanilla solc instead of zkVM-solc.** Fix is progress but make sure to check the compiler log our `build-info` details to confirm which compiler was used.
+**In versions previous to Aug 28th 2024, if a specific solc version is included in `foundry.toml`, foundry-zksync will use vanilla solc instead of zkVM-solc.** In the latest versions zkVM solc is used always by default. In order to compile with vanilla solc, specify the compiler path in the config file. 
 
 ## Successful verification
 
