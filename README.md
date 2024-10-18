@@ -4,6 +4,8 @@
 
 This project contains information to debug verification errors for contracts compiled and deployed using foundry-zksync, in the ZKsync explorer.
 
+> [This PR merged in October](https://github.com/matter-labs/foundry-zksync/pull/599) allowed contract verification with foundry-zksync on the [ZKsync explorer](https:/explorer.zksync.io).
+
 ## Commands
 
 - `RUST_LOG=trace forge build --zksync --build-info 2>&1 | sed -r "s/\x1b\[[0-9;]*m//g" > compile.log`: Compiles contracts and saves log. Change file name at the end as desired.
